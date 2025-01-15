@@ -12,51 +12,74 @@
 <body>
     <div class="container">
         <div class="signin-signup">
-            <form action="#" class="sign-in-form">
-                <h2 class="title">Sign In</h2>
+            <form action="" class="sign-in-form">
+                <h2 class="title">
+                    Sign In
+                </h2>
                 <div class="input-field">
-                    <i class="fas fa-user"></i>
+                    <i class="fas fa-user">
+                    </i>
                     <input type="text" placeholder="Username">
                 </div>
                 <div class="input-field">
-                    <i class="fas fa-lock"></i>
+                    <i class="fas fa-lock">
+                    </i>
                     <input type="text" placeholder="Password">
                 </div>
-                <input type="submit" value="Login" class="btn">
-                <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2"> sign-up</a></p>
+                <button class="btn" type="submit">
+                    <i class="fas fa-sign-in" aria-hidden="true" style="margin-right:20px ;">
+                    </i>
+                    Log in
+                </button>
+                <p class="account-text">Don't have an account?
+                    <a href="#" id="sign-up-btn2">
+                        sign-up
+                    </a>
+                </p>
             </form>
-            <form action="_bla" class="sign-up-form">
-                <h2 class="title">Sign up</h2>
+            <form action="#" class="sign-up-form">
+                <h2 class="title">
+                    Sign up
+                </h2>
                 <div class="input-image">
-                    <label for="image-upload" id="label-image-upload"><img src="../pics/defaultProfileImage.jpg" alt="" id="profile-image-icon"><img id="image-preview" src="" alt="Image Preview"></label>
-                    <input type="file" name="image" id="image-upload" accept="image/*" required style="display: none;" onchange="previewImage()">
-                    
+                    <label for="image-upload" id="label-image-upload"><img src="../pics/defaultProfileImage.jpg" alt=""
+                            id="profile-image-icon">
+                        <img id="image-preview" src="" alt="Image Preview">
+                    </label>
+                    <input type="file" name="image" id="image-upload" accept="image/*" required style="display: none;"
+                        onchange="previewImage()">
+
                 </div>
                 <div class="input-field">
-                    <i class="fas fa-user"></i>
+                    <i class="fas fa-user">
+                    </i>
                     <input type="text" placeholder="Username" required>
                 </div>
                 <div class="input-field">
-                    <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Mobile Number" required pattern="[0-9]{10}"> 
+                    <i class="fas fa-user">
+                    </i>
+                    <input type="text" placeholder="Mobile Number" required pattern="[0-9]{10}">
                 </div>
                 <div class="input-field">
-                    <i class="fas fa-user"></i>
-                    <input type="date" placeholder="Date of birth" required pattern="[0-9]{10}"> 
-                </div>
-                <div class="input-field">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-envelope">
+                    </i>
                     <input type="email" placeholder="Email" required>
                 </div>
                 <div class="input-field">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Password" required >
+                    <i class="fas fa-lock">
+                    </i>
+                    <input type="password" placeholder="Password" required>
                 </div>
                 <div class="input-field">
-                    <i class="fas fa-lock"></i>
+                    <i class="fas fa-lock">
+                    </i>
                     <input type="password" placeholder="Confirm Password" required>
                 </div>
-                <input type="submit" value="Sign up" class="btn">
+                <button class="btn" type="submit">
+                    <i class="fas fa-user-plus" aria-hidden="true" style="margin-right:20px ;">
+                    </i>
+                    Sign up
+                </button>
                 <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2"> sign-in</a></p>
             </form>
 
