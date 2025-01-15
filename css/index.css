@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+a{
+    text-decoration: none;
+}
 
 input {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
@@ -78,12 +81,14 @@ form.sign-up-form {
     color: #df4adf;
     margin-bottom: 10px;
 }
-.last-text{
+
+.last-text {
     align-self: flex-start;
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    width: 100%;
+    width: 90%;
+    padding: 0 20px;
 }
 
 .input-field {
@@ -116,6 +121,15 @@ form.sign-up-form {
     width: 60px;
     /* position: relative; */
 }
+.input-image input{
+    display: none;
+}
+
+#date-input-lable {
+    margin: 0 10px;
+    font-weight: 600;
+    opacity: 0.5;
+}
 
 #profile-image-icon {
     align-self: center;
@@ -137,6 +151,9 @@ form.sign-up-form {
 #label-image-upload {
     display: flex;
     align-items: center;
+}
+#label-image-upload img{
+    object-fit: cover;
 }
 
 .input-field input {
