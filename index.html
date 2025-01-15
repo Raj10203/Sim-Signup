@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
@@ -22,15 +22,28 @@
                     <i class="fas fa-lock"></i>
                     <input type="text" placeholder="Password">
                 </div>
+                <div class="last-text">
+                    <!-- <i class="fas fa-lock"></i> -->
+                    <label for="remember-me">Remember me
+                        <input type="checkbox" id="remember-me" placeholder="Password">
+                    </label>
+                    <a href="#" style="text-decoration: none;">
+                        forget password
+                    </a>
+                </div>
                 <input type="submit" value="Login" class="btn">
                 <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2"> sign-up</a></p>
             </form>
             <form action="_bla" class="sign-up-form">
                 <h2 class="title">Sign up</h2>
                 <div class="input-image">
-                    <label for="image-upload" id="label-image-upload"><img src="../pics/defaultProfileImage.jpg" alt="" id="profile-image-icon"><img id="image-preview" src="" alt="Image Preview"></label>
-                    <input type="file" name="image" id="image-upload" accept="image/*" required style="display: none;" onchange="previewImage()">
-                    
+                    <label for="image-upload" id="label-image-upload">
+                        <img src="./images/defaultProfileImage.jpg" alt="Default Image" id="profile-image-icon">
+                        <img id="image-preview" src="" alt="Image Preview" style="object-fit: cover;">
+                    </label>
+                    <input type="file" name="image" id="image-upload" accept="image/*" required style="display: none;"
+                        onchange="previewImage()">
+
                 </div>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
@@ -38,11 +51,15 @@
                 </div>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Mobile Number" required pattern="[0-9]{10}"> 
+                    <input type="text" placeholder="Mobile Number" required pattern="[0-9]{10}">
                 </div>
                 <div class="input-field">
-                    <i class="fas fa-user"></i>
-                    <input type="date" placeholder="Date of birth" required pattern="[0-9]{10}"> 
+                    <i class="fas fa-calendar-days">
+                    </i>
+                    <label for="date-input" style="margin: 0 10px;">
+                        Date Of birth
+                    </label>
+                    <input type="date" placeholder="Date of birth" required id="date-input" max="2004-01-01">
                 </div>
                 <div class="input-field">
                     <i class="fas fa-envelope"></i>
@@ -50,7 +67,7 @@
                 </div>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Password" required >
+                    <input type="password" placeholder="Password" required>
                 </div>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
@@ -69,7 +86,7 @@
                         praesentium?</p>
                     <button class="btn" id="sign-in-btn"> Sign in</button>
                 </div>
-                <img src="../pics/sign-in.svg" alt="" class="image">
+                <img src="./images/sign-in.svg" alt="" class="image">
             </div>
             <div class="panel right-panel">
                 <div class="content">
@@ -78,13 +95,12 @@
                         praesentium?</p>
                     <button class="btn" id="sign-up-btn"> Sign up</button>
                 </div>
-                <img src="../pics/sign-up.svg" alt="" class="image">
+                <img src="./images/sign-up.svg" alt="" class="image">
             </div>
 
         </div>
     </div>
-    <script src="../js/index.js"></script>
-
+    <script src="./js/index.js"></script>
 
 </body>
 
