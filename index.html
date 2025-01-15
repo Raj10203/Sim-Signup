@@ -23,9 +23,7 @@
                     <input type="text" placeholder="Password">
                 </div>
                 <div class="last-text">
-                    <!-- <i class="fas fa-lock"></i> -->
                     <div>
-
                         <input type="checkbox" id="remember-me" placeholder="Password">
                         <label for="remember-me">Remember me
                         </label>
@@ -37,14 +35,14 @@
                 <input type="submit" value="Login" class="btn">
                 <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2"> sign-up</a></p>
             </form>
-            <form action="_bla" class="sign-up-form">
+            <form target="_blank" action="#" class="sign-up-form">
                 <h2 class="title">Sign up</h2>
                 <div class="input-image">
                     <label for="image-upload" id="label-image-upload">
                         <img src="./images/defaultProfileImage.jpg" alt="Default Image" id="profile-image-icon">
                         <img id="image-preview" src="" alt="Image Preview" >
                     </label>
-                    <input type="file" name="image" id="image-upload" accept="image/*" required onchange="previewImage()">
+                    <input type="file" name="image-upload" id="image-upload" accept="image/*" required onchange="previewImage()">
                 </div>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
@@ -55,7 +53,7 @@
                     <input type="number" placeholder="Mobile Number" required min="1000000000" max="9999999999">
                 </div>
                 <div class="input-field">
-                    <i class="fas fa-calendar-days">
+                    <i class="fas fa-calendar-days" style="margin: 0 13px 0 0;">
                     </i>
                     <label for="date-input" id="date-input-lable">
                         Date Of birth
@@ -77,7 +75,6 @@
                 <input type="submit" value="Sign up" class="btn">
                 <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2"> sign-in</a></p>
             </form>
-
         </div>
         <div class="panals-container">
             <div class="panel left-panel">
@@ -98,11 +95,9 @@
                 </div>
                 <img src="./images/sign-up.svg" alt="" class="image">
             </div>
-
         </div>
     </div>
-    <script src="./js/index.js"></script>
-
 </body>
+<script src="./js/index.js"></script>
 
 </html>
