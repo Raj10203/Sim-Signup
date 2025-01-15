@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="../css/index.css">
 </head>
+
 <body>
     <div class="container">
         <div class="signin-signup">
-            <form action="" class="sign-in-form">
+            <form action="#" class="sign-in-form">
                 <h2 class="title">Sign In</h2>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
@@ -21,33 +23,69 @@
                     <input type="text" placeholder="Password">
                 </div>
                 <input type="submit" value="Login" class="btn">
+                <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2"> sign-up</a></p>
             </form>
-            <form action="" class="sign-up-form">
+            <form action="_bla" class="sign-up-form">
                 <h2 class="title">Sign up</h2>
+                <div class="input-image">
+                    <label for="image-upload" id="label-image-upload"><img src="../pics/defaultProfileImage.jpg" alt="" id="profile-image-icon"><img id="image-preview" src="" alt="Image Preview"></label>
+                    <input type="file" name="image" id="image-upload" accept="image/*" required style="display: none;" onchange="previewImage()">
+                    
+                </div>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Mobile Number" required pattern="[0-9]{10}"> 
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="date" placeholder="Date of birth" required pattern="[0-9]{10}"> 
                 </div>
                 <div class="input-field">
                     <i class="fas fa-envelope"></i>
-                    <input type="text" placeholder="Email">
+                    <input type="email" placeholder="Email" required>
                 </div>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
-                    <input type="text" placeholder="Password">
+                    <input type="password" placeholder="Password" required >
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Confirm Password" required>
                 </div>
                 <input type="submit" value="Sign up" class="btn">
+                <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2"> sign-in</a></p>
             </form>
+
         </div>
         <div class="panals-container">
             <div class="panel left-panel">
-                <div class="container">
-                    
+                <div class="content">
+                    <h3>member of Brand?</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum sequi debitis facilis id mollitia
+                        praesentium?</p>
+                    <button class="btn" id="sign-in-btn"> Sign in</button>
                 </div>
+                <img src="../pics/sign-in.svg" alt="" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>member of Brand?</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum sequi debitis facilis id mollitia
+                        praesentium?</p>
+                    <button class="btn" id="sign-up-btn"> Sign up</button>
+                </div>
+                <img src="../pics/sign-up.svg" alt="" class="image">
             </div>
 
         </div>
-
     </div>
+    <script src="../js/index.js"></script>
+
+
 </body>
+
 </html>
