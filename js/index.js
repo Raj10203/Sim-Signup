@@ -7,22 +7,22 @@ const container = document.querySelector('.container');
 
 sign_up_btn.addEventListener("click", () => {
     container.classList.add("sign-up-mode");
-    console.log("add");
+    // console.log("add");
 });
 
 sign_up_btn2.addEventListener("click", () => {
     container.classList.add("sign-up-mode2");
-    console.log("add");
+    // console.log("add");
 });
 
 sign_in_btn.addEventListener("click", () => {
     container.classList.remove("sign-up-mode");
-    console.log("remove");
+    // console.log("remove");
 });
 
 sign_in_btn2.addEventListener("click", () => {
     container.classList.remove("sign-up-mode2");
-    console.log("remove");
+    // console.log("remove");
 });
 
 function previewImage() {
@@ -33,6 +33,7 @@ function previewImage() {
 
     reader.onloadend = function() {
         preview.src = reader.result;
+       
         preview.style.display = "block"; // Show the image after loading
     };
 
@@ -40,7 +41,7 @@ function previewImage() {
         reader.readAsDataURL(file);
         imageIcon.style.setProperty("display","none");
     } else {
-        imageIcon.tyle.setProperty("display","none");
+        
         preview.style.display = "none"; // Hide the image if no file is selected
     }
 }
