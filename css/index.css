@@ -21,7 +21,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: linear-gradient(black, white);
+    background-image: linear-gradient(black, rgb(136, 151, 238));
 }
 
 .container {
@@ -41,7 +41,7 @@ body {
     left: -50%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(-45deg, #df4adf, #520852);
+    background: linear-gradient(-45deg, #4a8bdf, #090852);
     z-index: 6;
     transform: translateX(100%);
     transition: 1s ease-in-out; 
@@ -84,7 +84,7 @@ form {
 
 .title {
     font-size: 35px;
-    color: #df4adf;
+    color: #4a54df;
     margin-bottom: 10px;
 }
 
@@ -102,7 +102,7 @@ form {
     height: 50px;
     background: #f0f0f0;
     margin: 10px 0;
-    border: 2px solid #df4adf;
+    border: 2px solid #4a54df;
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -120,7 +120,7 @@ form {
     display: flex;
     align-items: center;
     padding: 1px;
-    border: 2px solid #df4adf;
+    border: 2px solid #4a54df;
     border-radius: 50%;
     height: 60px;
     width: 60px;
@@ -180,7 +180,7 @@ form {
     height: 50px;
     border: none;
     border-radius: 50px;
-    background-color: #df4adf;
+    background-color: #4a54df;
     color: white;
     font-weight: 600;
     margin: 10px 0;
@@ -188,7 +188,8 @@ form {
 }
 
 .btn:hover {
-    background: #c03cc0;
+    background: #090852;
+    transition: all 2s ease;
 }
 
 .panals-container {
