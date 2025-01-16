@@ -3,7 +3,11 @@
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 a {
     text-decoration: none;
 }
@@ -40,8 +44,9 @@ body {
     background: linear-gradient(-45deg, #df4adf, #520852);
     z-index: 6;
     transform: translateX(100%);
-    transition: 1s ease-in-out;
+    transition: 1s ease-in-out; 
 }
+
 
 .signin-signup {
     position: absolute;
@@ -65,13 +70,13 @@ form {
     padding: 0 10px;
 }
 
-form .sign-in-form {
+.sign-in-form {
     opacity: 1;
     transition: 0.5s ease-in-out;
     transition-delay: 1s;
 }
 
-form.sign-up-form {
+.sign-up-form {
     opacity: 0;
     transition: 0.5s ease-in-out;
     transition-delay: 1s;
@@ -101,7 +106,6 @@ form.sign-up-form {
     border-radius: 50px;
     display: flex;
     align-items: center;
-
 }
 
 .input-field i {
@@ -120,7 +124,6 @@ form.sign-up-form {
     border-radius: 50%;
     height: 60px;
     width: 60px;
-    /* position: relative; */
 }
 
 .input-image input {
@@ -133,13 +136,12 @@ form.sign-up-form {
     opacity: 0.5;
     font-size: 13px;
 }
-#date-input{
+
+#date-input {
     opacity: 0.5;
-    width: 50%;
+    width: 40%;
     margin-left: 10px;
 }
-
-
 
 #profile-image-icon {
     align-self: center;
@@ -151,11 +153,8 @@ form.sign-up-form {
 #image-preview {
     width: 60px;
     height: 60px;
-    /* image-rendering: crisp-edges; */
     border-radius: 100%;
     display: none;
-    /* Hide the image preview initially */
-
 }
 
 #label-image-upload {
@@ -213,7 +212,6 @@ form.sign-up-form {
     padding: 0 10px;
     text-align: center;
     z-index: 6;
-
 }
 
 .left-panel {
