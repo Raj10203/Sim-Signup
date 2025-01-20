@@ -3,11 +3,13 @@
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
+
 a {
     text-decoration: none;
 }
@@ -44,7 +46,7 @@ body {
     background: linear-gradient(-45deg, #4a8bdf, #090852);
     z-index: 6;
     transform: translateX(100%);
-    transition: 1s ease-in-out; 
+    transition: 1s ease-in-out;
 }
 
 
