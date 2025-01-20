@@ -2,32 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <link rel="stylesheet" href="./css/index.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
 </head>
 
 <body>
     <div class="container">
         <div class="signin-signup">
-
             <form action="#" class="sign-in-form">
                 <h2 class="title">Sign In</h2>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Username" />
                 </div>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
-                    <input type="text" placeholder="Password">
+                    <input type="text" placeholder="Password" />
                 </div>
                 <div class="last-text">
                     <div>
-                        <input type="checkbox" id="remember-me" placeholder="Password">
+                        <input type="checkbox" id="remember-me" placeholder="Password" />
                         <label for="remember-me">Remember me
                         </label>
                     </div>
@@ -35,71 +32,72 @@
                         forget password
                     </a>
                 </div>
-                <input type="submit" value="Login" class="btn">
+                <input type="submit" value="Login" class="btn" />
                 <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2"> sign-up</a></p>
             </form>
             <form target="_blank" action="#" class="sign-up-form">
                 <h2 class="title">Sign up</h2>
                 <div class="input-image">
                     <label for="image-upload" id="label-image-upload">
-                        <img src="./images/defaultProfileImage.jpg" alt="Default Image" id="profile-image-icon">
-                        <img id="image-preview" src="" alt="Image Preview" >
+                        <img src="./images/defaultProfileImage.jpg" alt="Default Image" id="profile-image-icon" />
+                        <img id="image-preview" src="" alt="Image Preview" />
                     </label>
-                    <input type="file" name="image-upload" id="image-upload" accept="image/*" required onchange="previewImage()">
+                    <input type="file" name="image-upload" id="image-upload" accept="image/*" required
+                        onchange="previewImage()" />
                 </div>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Username" required>
+                    <input type="text" placeholder="Username" required />
                 </div>
                 <div class="input-field">
                     <i class="fas fa-phone"></i>
-                    <input type="number" placeholder="Mobile Number" required min="1000000000" max="9999999999">
+                    <input type="number" placeholder="Mobile Number" required min="1000000000" max="9999999999" />
                 </div>
                 <div class="input-field">
-                    <i class="fas fa-calendar-days" style="margin: 0 13px 0 0;">
+                    <i class="fas fa-calendar-days" style="margin: 0 10px 0 8px;">
                     </i>
                     <label for="date-input" id="date-input-lable">
                         Date Of birth
                     </label>
-                    <input type="date" placeholder="Date of birth" required id="date-input" max="2004-01-01">
+                    <input type="date" placeholder="Date of birth" required id="date-input" max="2004-01-01" />
                 </div>
                 <div class="input-field">
                     <i class="fas fa-envelope"></i>
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" placeholder="Email" required />
                 </div>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Password" required />
                 </div>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Confirm Password" required>
+                    <input type="password" placeholder="Confirm Password" required />
                 </div>
-                <input type="submit" value="Sign up" class="btn">
+                <input type="submit" value="Sign up" class="btn" />
                 <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2"> sign-in</a></p>
             </form>
         </div>
         <div class="panals-container">
             <div class="panel left-panel">
                 <div class="content">
-                    <h3>member of Brand?</h3>
+                    <h3>Already have an account</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum sequi debitis facilis id mollitia
                         praesentium?</p>
                     <button class="btn" id="sign-in-btn"> Sign in</button>
                 </div>
 
-                <img src="./images/sign-in.svg" alt="" class="image">
+                <img src="./images/sign-in.svg" alt="" class="image" />
 
             </div>
             <div class="panel right-panel">
                 <div class="content">
-                    <h3>member of Brand?</h3>
+                    <h3>Don't have an account?</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum sequi debitis facilis id mollitia
                         praesentium?</p>
                     <button class="btn" id="sign-up-btn"> Sign up</button>
                 </div>
 
-                <img src="./images/sign-up.svg" alt="" class="image">
+                <img src="./images/sign-up.svg" alt="" class="image" />
             </div>
         </div>
     </div>
